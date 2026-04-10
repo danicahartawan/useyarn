@@ -1,0 +1,447 @@
+Skip to main content
+/
+Impeccable
+Home
+Docs
+Anti-Patterns
+Visual Mode
+17k
+01
+Foundation
+02
+Language
+03
+Antidote
+04
+Visual
+05
+Install
+06
+New
+07
+FAQ
+Impeccable
+Design fluency for AI harnesses
+
+Great design prompts require design vocabulary. Most people don't have it. Impeccable teaches your AI deep design knowledge and gives you 21 commands to steer the result.
+
+What's included
+Enhanced impeccable skill + anti-patterns
+·
+21 design commands: /polish, /audit, /typeset, /overdrive...
+Get Started
+Works with
+Cursor
+Claude Code
+Gemini CLI
+Codex CLI
+VS Code Copilot
+Antigravity
+Kiro
+OpenCode
+Pi
+v2.0: Detection engine, Chrome extension, data-driven skill
+
+
+
+
+
+Generic AI Output
+With Design Skills
+01
+The Foundation
+Before commands, before detection, Impeccable teaches your AI real design. Deep reference knowledge across 7 dimensions, loaded every time your AI writes code.
+
+Typography
+33
+Scale, rhythm, hierarchy, expression
+
+Color & Contrast
+29
+Accessibility, systems, theming
+
+Spatial Design
+27
+Layout, spacing, composition
+
+Responsive
+23
+Fluid layouts, touch targets
+
+Interaction
+36
+States, feedback, affordances
+
+Motion
+32
+Micro-interactions, transitions
+
+UX Writing
+32
+Clarity, voice, error messages
+
+Run /impeccable teach once to set your project's design context. Every command benefits.
+
+02
+The Language
+21 commands form a shared vocabulary between you and your AI. Each one encodes a specific design discipline, so you can steer with precision.
+
+Create
+0
+Sh
+/shape
+1
+Ic
+/impeccable craft
+2
+Im
+/impeccable
+Evaluate
+5
+Cr
+/critique
+6
+Au
+/audit
+Refine
+7
+Ty
+/typeset
+8
+Ar
+/arrange
+9
+Co
+/colorize
+10
+An
+/animate
+11
+De
+/delight
+12
+Bo
+/bolder
+13
+Qu
+/quieter
+3
+On
+/onboard
+4
+Od
+/overdrive
+β
+Simplify
+14
+Di
+/distill
+15
+Cl
+/clarify
+16
+Ad
+/adapt
+Harden
+17
+No
+/normalize
+18
+Po
+/polish
+19
+Op
+/optimize
+20
+Ha
+/harden
+System
+21
+It
+/impeccable teach
+22
+Ex
+/extract
+Pick any command to see it in action. View cheatsheet →
+
+/impeccable/shape/critique/audit/typeset/arrange/colorize/animate/delight/bolder/quieter/onboard/overdriveBETA/distill/clarify/adapt/normalize/polish/optimize/harden/extract
+Create
+/impeccable
+Create distinctive, production-grade frontend interfaces with high design quality. Generates creative, polished code that avoids generic AI aesthetics. Use when the user asks to build web components, pages, artifacts, posters, or applications, or when any design skill requires project context. Call with 'craft' to run the full shape-then-build flow, or 'teach' for design context setup.
+
+Create: Freeform design with full design intelligence
+Create
+/shape
+Plan the UX and UI for a feature before writing code. Runs a structured discovery interview, then produces a design brief that guides implementation. Use during the planning phase to establish design direction, constraints, and strategy before any code is written.
+
+→
+leads to
+/impeccable craft
+Evaluate
+/critique
+Evaluate design from a UX perspective, assessing visual hierarchy, information architecture, emotional resonance, cognitive load, and overall quality with quantitative scoring, persona-based testing, automated anti-pattern detection, and actionable feedback. Use when the user asks to review, critique, evaluate, or give feedback on a design or component.
+
+→
+leads to
+/polish
+/distill
+/bolder
+/quieter
+/typeset
+/arrange
+Evaluate
+/audit
+Run technical quality checks across accessibility, performance, theming, responsive design, and anti-patterns. Generates a scored report with P0-P3 severity ratings and actionable plan. Use when the user wants an accessibility check, performance audit, or technical quality review.
+
+→
+leads to
+/normalize
+/harden
+/optimize
+/adapt
+/clarify
+Refine
+/typeset
+Improves typography by fixing font choices, hierarchy, sizing, weight, and readability so text feels intentional. Use when the user mentions fonts, type, readability, text hierarchy, sizing looks off, or wants more polished, intentional typography.
+
++
+combines with
+/bolder
+/normalize
+Refine
+/arrange
+Improve layout, spacing, and visual rhythm. Fixes monotonous grids, inconsistent spacing, and weak visual hierarchy. Use when the user mentions layout feeling off, spacing issues, visual hierarchy, crowded UI, alignment problems, or wanting better composition.
+
++
+combines with
+/distill
+/adapt
+Refine
+/colorize
+Add strategic color to features that are too monochromatic or lack visual interest, making interfaces more engaging and expressive. Use when the user mentions the design looking gray, dull, lacking warmth, needing more color, or wanting a more vibrant or expressive palette.
+
++
+combines with
+/bolder
+/delight
+Refine
+/animate
+Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight. Use when the user mentions adding animation, transitions, micro-interactions, motion design, hover effects, or making the UI feel more alive.
+
++
+combines with
+/delight
+Refine
+/delight
+Add moments of joy, personality, and unexpected touches that make interfaces memorable and enjoyable to use. Elevates functional to delightful. Use when the user asks to add polish, personality, animations, micro-interactions, delight, or make an interface feel fun or memorable.
+
++
+combines with
+/bolder
+/animate
+Refine
+/bolder
+Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability. Use when the user says the design looks bland, generic, too safe, lacks personality, or wants more visual impact and character.
+
+↔
+pairs with
+/quieter
+Refine
+/quieter
+Tones down visually aggressive or overstimulating designs, reducing intensity while preserving quality. Use when the user mentions too bold, too loud, overwhelming, aggressive, garish, or wants a calmer, more refined aesthetic.
+
+↔
+pairs with
+/bolder
+Refine
+/onboard
+Designs and improves onboarding flows, empty states, and first-run experiences to help users reach value quickly. Use when the user mentions onboarding, first-time users, empty states, activation, getting started, or new user flows.
+
++
+combines with
+/clarify
+/delight
+Refine
+/overdriveBETA
+Pushes interfaces past conventional limits with technically ambitious implementations — shaders, spring physics, scroll-driven reveals, 60fps animations. Use when the user wants to wow, impress, go all-out, or make something that feels extraordinary.
+
++
+combines with
+/animate
+/delight
+Simplify
+/distill
+Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when the user asks to simplify, declutter, reduce noise, remove elements, or make a UI cleaner and more focused.
+
++
+combines with
+/quieter
+/normalize
+Simplify
+/clarify
+Improve unclear UX copy, error messages, microcopy, labels, and instructions to make interfaces easier to understand. Use when the user mentions confusing text, unclear labels, bad error messages, hard-to-follow instructions, or wanting better UX writing.
+
++
+combines with
+/normalize
+/adapt
+Confusing copy → Clear, actionable language
+Simplify
+/adapt
+Adapt designs to work across different screen sizes, devices, contexts, or platforms. Implements breakpoints, fluid layouts, and touch targets. Use when the user mentions responsive design, mobile layouts, breakpoints, viewport adaptation, or cross-device compatibility.
+
++
+combines with
+/normalize
+/clarify
+Harden
+/normalize
+Audits and realigns UI to match design system standards, spacing, tokens, and patterns. Use when the user mentions consistency, design drift, mismatched styles, tokens, or wants to bring a feature back in line with the system.
+
++
+combines with
+/clarify
+/adapt
+Harden
+/polish
+Performs a final quality pass fixing alignment, spacing, consistency, and micro-detail issues before shipping. Use when the user mentions polish, finishing touches, pre-launch review, something looks off, or wants to go from good to great.
+
+Harden: Final pass before shipping
+Harden
+/optimize
+Diagnoses and fixes UI performance across loading speed, rendering, animations, images, and bundle size. Use when the user mentions slow, laggy, janky, performance, bundle size, load time, or wants a faster, smoother experience.
+
+Harden: Performance improvements
+Harden
+/harden
+Improve interface resilience through better error handling, i18n support, text overflow handling, and edge case management. Makes interfaces robust and production-ready. Use when the user asks to harden, make production-ready, handle edge cases, add error states, or fix overflow and i18n issues.
+
++
+combines with
+/optimize
+System
+/extract
+Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. Use when the user asks to create components, refactor repeated UI patterns, build a design system, or extract tokens.
+
+System: Create design system components and tokens
+03
+The Antidote
+Every AI model learned from the same templates. Without intervention, they all produce the same predictable mistakes. Impeccable names them, detects them, and teaches the AI to avoid them.
+
+Typography
+Color & Contrast
+Layout & Space
+Visual Details
+Motion
+Interaction
+Responsive
+UX Writing
+use overused fonts like Inter, Roboto, Arial, Open Sans, or system defaults — but also do not simply switch to your second-favorite. Every font in the reflex_fonts_to_reject list above is banned. Look further.
+use Syne. Ever. It is an instant AI design tell.
+use monospace typography as lazy shorthand for "technical/developer" vibes.
+put large icons with rounded corners above every heading. They rarely add value and make sites look templated.
+use only one font family for the entire page. Pair a distinctive display font with a refined body font.
+use a flat type hierarchy where sizes are too close together. Aim for at least a 1.25 ratio between steps.
+set long body passages in uppercase. Reserve all-caps for short labels and headings.
+THIS BEFORE TYPING ANY FONT NAME.
+use a modular type scale with fluid sizing (clamp) on headings.
+vary font weights and sizes to create clear visual hierarchy.
+vary your font choices across projects. If you used a serif display font on the last project, look for a sans, monospace, or display face on this one.
+Gallery of Shame
+←
+→
+Purple gradient UI
+Purple Gradients
+Thick border accent cards
+Side-Tab Cards
+Cards nested inside cards
+Cardocalypse
+Inter font everywhere
+Inter Everywhere
+Generic layout templates
+Template Layouts
+Low contrast text
+Bad Contrast
+View full gallery →
+Suggest a pattern →
+04
+Visual Mode
+See design issues highlighted directly on the page. No screenshots, no guesswork. Impeccable’s overlay shows you exactly what’s wrong and where.
+
+Live detection overlay
+
+25 deterministic checks
+No LLM needed. Pattern matching catches purple gradients, overused fonts, nested cards, low contrast, and more.
+
+Three ways to use it
+The Chrome extension on any site, embedded in /critique during an AI design review, or standalone via npx impeccable live.
+
+Impeccable Chrome extension panel listing detected anti-patterns
+Available now
+Chrome extension
+Install from Chrome Web Store →
+05
+Get Started
+1
+Install the skills
+Recommended
+21 commands that steer your AI toward better design, in real time. The full Impeccable experience.
+
+npx skills add pbakaus/impeccable
+
+Works with Cursor, Claude Code, Gemini CLI, Codex CLI, and more.
+Then run /impeccable teach to set up your project's design context.
+Other install methods
+Claude Code plugin
+/plugin marketplace add pbakaus/impeccable
+
+Then open /plugin in Claude Code
+Manual download all 11 providers
+
+Default zip
+/polish
+/audit
+
+Prefixed zip
+/i-polish
+/i-audit
+2
+Add the CLI
+Beta
+3
+Browser extension
+4
+Stay updated
+06
+What's New
+v2.0
+April 8, 2026
+Renamed frontend-design to impeccable. The core skill now shares its name with the project, and the teach subcommand moved from /teach-impeccable to /impeccable teach. One skill, one namespace.
+Data-driven skill rewrite. The core skill was rebuilt against an internal eval framework that runs the same brief through frontier models with and without the skill loaded, then measures how much the output collapses into monoculture. The result: dramatically more font and color diversity, sharper overall design quality, and much stronger Codex support. The biggest unlock was an anti-attractor procedure that forces the model to enumerate and reject its reflex defaults before picking. Validated on gpt-5.4 and Qwen 3.6 Plus across 15 niches.
+Anti-pattern detection engine. 25 deterministic rules across typography, color, layout, motion, and quality. Handles oklch, oklab, lch, and lab color formats, CSS variables inside border shorthands, gradient-backed text, and emoji-only nodes.
+CLI: npx impeccable detect. Scans HTML, CSS, JSX/TSX, Vue, Svelte, and CSS-in-JS. Framework detection, multi-file import tracking, Puppeteer-backed live URL scanning, CI-ready JSON output, and a --fast regex mode for huge codebases.
+Chrome DevTools extension. One-click detection on any page: yours, staging, production, or someone else's. Reads live computed styles, surfaces findings in an interactive panel, and highlights elements on the page. In Chrome Web Store review.
+/critique got teeth. Persona sub-agents review in parallel, score against Nielsen's heuristics, run the detector automatically, and open a live browser overlay so you can walk each finding in place.
+New ways to create with Impeccable. /shape runs a structured discovery interview about purpose, audience, and goals, then produces a design brief before any code is written. /impeccable craft chains that brief straight into the full implementation flow so you ship a designed feature instead of a reflex card grid.
+New docs site. Top-level Docs, Anti-Patterns, and Visual Mode sections. 21 per-skill pages with before/after demos and the canonical SKILL.md inline, two tutorials, and 38 rule cards with inline visual examples.
+New harness: Rovo Dev. 11 supported AI tools total.
+View older releases
+07
+Frequently Asked Questions
+Where do I put the downloaded files?
+How do I update to the latest version?
+Commands or skills aren't appearing. What do I do?
+I'm new to AI harnesses. Where do I start?
+Is Impeccable free?
+Work with me
+Impeccable is built by Renaissance Geek. I work with enterprise teams on large-scale rollouts, custom integrations, and training for designers and developers. If you're a frontier lab, design tool company, or enterprise looking to raise the bar on AI-generated design, let's talk.
+
+Get in touch
+Impeccable
+Anti-Patterns
+Gallery of Shame
+Commands
+Cheatsheet
+Privacy
+GitHub
+Created by Paul Bakaus

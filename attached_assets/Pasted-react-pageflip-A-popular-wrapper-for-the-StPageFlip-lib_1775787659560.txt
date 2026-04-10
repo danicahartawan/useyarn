@@ -1,0 +1,58 @@
+react-pageflip: A popular wrapper for the StPageFlip library. It supports complex HTML blocks, images, and is mobile-friendly.
+@xata.io/react-flipbook: Provides various modes including "auto" (crossfade), "scrub", or "controlled" for precise animation management.
+flipping-pages: A lightweight component focused on smooth page-turning transitions. 
+NPM
+NPM
+ +4
+2. Custom implementation with Framer Motion
+For a bespoke "opening" animation (e.g., a book lying flat that opens its cover), you can combine TypeScript with Framer Motion's 3D capabilities: 
+React
+React
+ +2
+typescript
+import { motion } from 'framer-motion';
+
+const Book = () => {
+  return (
+    <div style={{ perspective: '1000px' }}>
+      <motion.div
+        initial={{ rotateY: 0 }}
+        whileHover={{ rotateY: -160 }}
+        transition={{ duration: 1.5 }}
+        style={{
+          width: '200px',
+          height: '300px',
+          backgroundColor: 'navy',
+          transformOrigin: 'left', // Sets the spine as the anchor
+          transformStyle: 'preserve-3d',
+        }}
+      >
+        {/* Front Cover Content */}
+        <div style={{ backfaceVisibility: 'hidden' }}>Book Title</div>
+      </motion.div>
+    </div>
+  );
+};
+3. Key Concepts for 3D Books
+Transform Origin: Set transform-origin: left (or right for RTL languages) to ensure the page rotates around the "spine" rather than its center.
+Perspective: Wrap your book in a container with a perspective property (e.g., 1000px) to give the rotation a 3D sense of depth.
+Preserve-3D: Use transform-style: preserve-3d on the parent element to allow child elements (like the back of a page) to exist in the same 3D space. 
+Stack Overflow
+Stack Overflow
+ +2
+react-pageflip - NPM
+Apr 18, 2021 — Props * width: number - required. * height: number - required. * size: ("fixed", "stretch") - default: "fixed" Whether the book wi...
+
+NPM
+
+3D animation of a book opening - unexpected rotation
+Jun 29, 2025 — The new wrapper handles positioning --> About the Author
+
+Stack Overflow
+
+Nodlik/react-pageflip: Simple React.js wrapper for StPageFlip library, ...
+React. js wrapper for StPageFlip * Works with simple images on canvas and complex HTML blocks. * Has simple API and flexible confi...
+
+GitHub
+
+Show all

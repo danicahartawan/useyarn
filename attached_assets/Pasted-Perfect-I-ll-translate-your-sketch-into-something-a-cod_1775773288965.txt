@@ -1,0 +1,336 @@
+Perfect — I’ll translate your sketch into something a **coding agent (or teammate)** can actually execute.
+
+I’m going to be very literal and structured so it maps cleanly → code.
+
+---
+
+# 🧠 OVERALL CONCEPT (WHAT THIS APP IS)
+
+> A **journalist workspace** that turns scattered information into a **visual story graph**, while keeping the user in control (no auto-writing).
+
+Key idea:
+
+* Left = navigation (projects)
+* Center = thinking space (graph)
+* Right = sources (library/search)
+
+---
+
+# 🧱 UI LAYOUT (FROM YOUR DRAWING)
+
+## 1. LEFT SIDEBAR — “PROJECTS”
+
+```
+danica’s space
+  ├── Hanoi trains
+  ├── Trump’s budget cuts
+  ├── I love trains
+```
+
+### What this means:
+
+* Each “project” = one story
+* Clicking loads its graph + sources
+
+### Implementation:
+
+```js
+Project {
+  id: string
+  title: string
+  nodes: Node[]
+  edges: Edge[]
+}
+```
+
+---
+
+## 2. CENTER — “GRAPH CANVAS” (MAIN THING)
+
+You drew:
+
+* circles connected to a center node
+
+### What this represents:
+
+* Nodes = entities / events / ideas
+* Edges = relationships
+
+### Node types (IMPORTANT for your agent):
+
+```js
+Node {
+  id: string
+  type: "entity" | "event" | "note"
+  label: string
+}
+```
+
+Examples:
+
+* entity → “OpenAI”
+* event → “GPT-4 release”
+* note → “possible angle: regulation”
+
+---
+
+### Edges:
+
+```js
+Edge {
+  from: nodeId
+  to: nodeId
+  relationship: string
+}
+```
+
+Example:
+
+* OpenAI → GPT-4 release → “launched”
+
+---
+
+## 3. RIGHT PANEL — “LIBRARY / SEARCH”
+
+You wrote:
+
+* search bar
+* folders / sources
+
+### What it does:
+
+* fetch sources (Perplexity)
+* show results
+* user can drag into graph
+
+---
+
+### Source structure:
+
+```js
+Source {
+  title: string
+  summary: string
+  url: string
+}
+```
+
+---
+
+# ⚡ CORE INTERACTIONS (THIS IS WHAT YOUR AGENT BUILDS)
+
+## 1. SEARCH → SOURCES
+
+User types:
+
+```
+“Hanoi train system”
+```
+
+Agent:
+
+* calls Perplexity API
+* returns sources
+
+UI:
+
+* shows list on right panel
+
+---
+
+## 2. ADD TO GRAPH (KEY MOMENT)
+
+User clicks source → “Add node”
+
+Agent:
+
+* extracts:
+
+  * entities
+  * events
+
+Creates nodes:
+
+```js
+["Vietnam Railways", "Metro Expansion 2024"]
+```
+
+Adds to center graph
+
+---
+
+## 3. MANUAL CONTROL (IMPORTANT — YOUR INSIGHT)
+
+You wrote:
+
+> “no chat because journalists don’t trust AI”
+
+So:
+
+### DO NOT:
+
+* auto-generate story
+* auto-connect everything
+
+### DO:
+
+* let user:
+
+  * drag nodes
+  * connect nodes
+  * edit labels
+
+---
+
+## 4. ADD NODE / ADD EDGE BUTTONS
+
+You sketched:
+
+* “Add node”
+* “Add edge”
+* “Add agent” (we’ll redefine this)
+
+### Implementation:
+
+```js
+function addNode(type, label)
+function addEdge(from, to, relationship)
+```
+
+---
+
+## 5. “ADD AGENT” → REDEFINE THIS (IMPORTANT)
+
+Right now unclear.
+
+Make it:
+
+> “Suggest connections”
+
+When clicked:
+
+* agent looks at graph
+* suggests:
+
+  * missing links
+  * possible tensions
+
+Example:
+
+```json
+{
+  "suggestions": [
+    "Link 'Vietnam Gov' → 'Metro Expansion' (funding)",
+    "Tension: 'urban growth vs infrastructure limits'"
+  ]
+}
+```
+
+---
+
+# 🧠 DATA FLOW (FOR YOUR AGENT)
+
+```
+User input
+   ↓
+Perplexity API
+   ↓
+Raw sources
+   ↓
+LLM structuring
+   ↓
+Entities + events
+   ↓
+Graph nodes
+```
+
+---
+
+# 🧩 MINIMUM FEATURES (DON’T OVERBUILD)
+
+Your agent should ONLY build:
+
+### ✅ Required
+
+* project list
+* search → sources
+* add node
+* simple graph (can be basic circles)
+* connect nodes
+
+### ❌ Skip
+
+* auth
+* real-time sync
+* fancy graph physics
+* database (just in-memory)
+
+---
+
+# 🧠 HOW TO EXPLAIN THIS TO YOUR CODING AGENT
+
+Use this:
+
+---
+
+**We are building a journalist workspace with 3 panels:**
+
+1. Left sidebar → list of projects
+2. Center → graph canvas (nodes + edges)
+3. Right → search + sources
+
+---
+
+**Core flow:**
+
+* user searches topic
+* we fetch sources (Perplexity API)
+* display them on right
+* user clicks → convert into nodes
+* nodes appear in graph
+* user connects them manually
+
+---
+
+**Important constraints:**
+
+* no chatbot interface
+* no auto-writing
+* user is always in control
+* AI only suggests, never decides
+
+---
+
+**Data structures:**
+
+* Project
+* Node (entity/event/note)
+* Edge
+* Source
+
+---
+
+# 🧠 Real critique (important)
+
+Your sketch is **very strong conceptually**, but:
+
+### Risk:
+
+* becomes “Notion + graph” (too generic)
+
+### What makes it win:
+
+* the **agent layer = structuring + suggesting**
+* NOT just visual graph
+
+---
+
+# 🔥 If you want next step
+
+I can:
+
+* turn this into **actual React + Flask starter code**
+* or write the exact **Perplexity + LLM parsing function**
+
+Just say:
+👉 “code it”

@@ -1,0 +1,212 @@
+Skip to main content
+Docs
+Cookbook
+API Reference
+
+Search
+⌘K
+
+Community
+Blog
+Changelog
+Getting Started
+Overview
+Quickstart
+Pricing
+
+Tools & Integrations
+Perplexity SDK
+Quickstart
+
+Guides
+Agent API
+Quickstart
+
+Models & Configuration
+
+Features
+OpenAI Compatibility
+Search API
+Quickstart
+
+Filters
+Best Practices
+Sonar API
+Quickstart
+Models
+
+Features
+Embeddings API
+Quickstart
+Standard Embeddings
+Contextualized Embeddings
+Best Practices
+Admin & Management
+API Groups & Billing
+API Key Management
+Rate Limits & Usage Tiers
+AWS Marketplace
+Resources
+API Roadmap
+Privacy & Security
+Frequently Asked Questions
+System Status
+Changelog
+Get in Touch
+Perplexity Crawlers
+
+
+Why Use the Agent API?
+Installation
+Authentication
+Basic Usage
+Using a Third-Party Model
+Using a Preset
+With Web Search
+Next Steps
+Agent API
+Agent API
+
+Copy page
+
+The Agent API is a multi-provider, interoperable API specification for building LLM applications. Access models from multiple providers with integrated real-time web search, tool configuration, reasoning control, and token budgets—all through one unified interface.
+
+Try the Agent API Playground
+Test Agent API requests and parameters interactively in the API console.
+Launch Playground
+​
+Why Use the Agent API?
+Multi-Provider Access
+Access OpenAI, Anthropic, Google, xAI, and more through one unified API, no need to manage multiple API keys.
+Transparent Pricing
+See exact token counts and costs per request, no markup, just direct provider pricing.
+Granular Control
+Change models, reasoning, tokens, and tools with consistent syntax.
+We recommend using our official SDKs for a more convenient and type-safe way to interact with the Agent API.
+Endpoint: The Agent API is available at POST https://api.perplexity.ai/v1/agent. For OpenAI SDK compatibility, POST /v1/responses is also accepted as an alias. See the OpenAI Compatibility Guide for details on using OpenAI SDKs with Perplexity.
+​
+Installation
+Install the SDK for your preferred language:
+
+Python
+
+Typescript
+pip install perplexityai
+​
+Authentication
+Set your API key as an environment variable. The SDK will automatically read it:
+macOS/Linux
+Windows
+export PERPLEXITY_API_KEY="your_api_key_here"
+All SDK examples below automatically use the PERPLEXITY_API_KEY environment variable. You can also pass the key explicitly if needed.
+​
+Basic Usage
+Convenience Property: Both Python and Typescript SDKs provide an output_text property that aggregates all text content from response outputs. Instead of iterating through response.output, simply use response.output_text for cleaner code.
+​
+Using a Third-Party Model
+Use third-party models from OpenAI, Anthropic, Google, xAI, and other providers for specific capabilities:
+
+Python
+
+Typescript
+
+cURL
+from perplexity import Perplexity
+
+client = Perplexity()
+
+response = client.responses.create(
+    model="openai/gpt-5.4",
+    input="Explain the difference between supervised and unsupervised learning in machine learning."
+)
+
+print(f"Response ID: {response.id}")
+print(response.output_text)
+Response
+
+​
+Using a Preset
+Presets provide optimized defaults for specific use cases.
+Start with a preset for quick setup:
+
+Python
+
+Typescript
+
+cURL
+from perplexity import Perplexity
+
+client = Perplexity()
+
+response = client.responses.create(
+    preset="pro-search",
+    input="Compare the latest open-source LLMs released in 2025 in terms of benchmark performance, licensing, and real-world applications.",
+)
+
+print(f"Model used: {response.model}")
+print(response.output_text)
+Response
+
+Learn more about presets to explore pre-configured setups optimized for different use cases with specific models, token limits, and tool access.
+​
+With Web Search
+The Agent API provides access to a number of tools that can be used to extend the capabilities of the model.
+Enable web search capabilities using the web_search tool:
+
+Python
+
+Typescript
+
+cURL
+from perplexity import Perplexity
+
+client = Perplexity()
+
+response = client.responses.create(
+    model="openai/gpt-5.4",
+    input="What are the latest developments in AI?",
+    tools=[{"type": "web_search"}],
+    instructions="You have access to a web_search tool. Use it for questions about current events, news, or recent developments. Use 1 query for simple questions. Keep queries brief: 2-5 words. NEVER ask permission to search - just search when appropriate",
+)
+
+if response.status == "completed":
+    print(response.output_text)
+Response
+
+​
+Next Steps
+Tools
+Use web search, URL fetching, and function calling to extend model capabilities.
+Models
+Browse available models and pricing across all supported providers.
+Presets
+Explore pre-configured setups for common use cases like pro-search and deep-research.
+Output Control
+Configure streaming responses and structured outputs with JSON schema.
+Model Fallback
+Specify multiple models for automatic failover and higher availability.
+Prompt Guide
+Best practices for effective prompting with web search models.
+Search Filters
+Control search results with domain, date, and location filters.
+API Reference
+View complete endpoint documentation and parameters.
+Need help? Check out our community for support and discussions with other developers.
+Was this page helpful?
+
+
+Yes
+
+No
+Best Practices
+Previous
+Models
+Next
+Ask a question...
+
+x
+discord
+website
+Powered by
+This documentation is built and hosted on Mintlify, a developer documentation platform
+

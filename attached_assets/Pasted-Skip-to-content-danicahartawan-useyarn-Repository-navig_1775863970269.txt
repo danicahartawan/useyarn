@@ -1,0 +1,209 @@
+Skip to content
+danicahartawan
+useyarn
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security and quality
+Insights
+Settings
+Important update
+On April 24 we'll start using GitHub Copilot interaction data for AI model training unless you opt out. Review this update and manage your preferences in your GitHub account settings.
+Commits
+Branch selector
+User selector
+Datepicker
+Commit History
+Commits on Apr 10, 2026
+feat: notebooks workspace - April 10, 2026
+author
+Danica Hartawan
+committed
+2 minutes ago
+Task #25: Perplexity agent across all notebook features
+author
+danicahartawan1
+committed
+12 minutes ago
+Task #24: Move File Tree to right side, collapsed by default
+author
+danicahartawan1
+committed
+43 minutes ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+43 minutes ago
+Task #20: Notebook sidebar UI redesign (file tree + multitasker)
+author
+danicahartawan1
+committed
+54 minutes ago
+feat: Add Agent Builder tab in notebook view (Task #23)
+author
+danicahartawan1
+committed
+54 minutes ago
+Task #21: Scrollbar page dots as clickable bookmarks
+author
+danicahartawan1
+committed
+1 hour ago
+Remove pink focus ring from global stylesheet
+author
+danicahartawan1
+committed
+1 hour ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+1 hour ago
+feat: Multitasker real task functionality (Task #19)
+author
+danicahartawan1
+committed
+1 hour ago
+Move the multitasking sidebar to the left of the research notes
+author
+danicahartawan1
+committed
+4 hours ago
+Move multitasker sidebar to the left side of the panel
+author
+danicahartawan1
+committed
+4 hours ago
+Commits on Apr 9, 2026
+feat: Notebook file node graph & agent search (Task #16)
+author
+danicahartawan1
+committed
+16 hours ago
+Task #13: Perplexity agent search overlay
+author
+danicahartawan1
+committed
+17 hours ago
+feat: Multitasker branch & apply workflow (Task #18)
+author
+danicahartawan1
+committed
+17 hours ago
+Task #17: Multitasker peek sidebar in notebooks
+author
+danicahartawan1
+committed
+20 hours ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+20 hours ago
+feat: File drop & RAG categorization in file tree (Task #15)
+author
+danicahartawan1
+committed
+20 hours ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+20 hours ago
+Task #14: Notebook scrollbar page dots & sections
+author
+danicahartawan1
+committed
+20 hours ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+20 hours ago
+feat: Add Agent Builder canvas to /notebooks route (Task #12)
+author
+danicahartawan1
+committed
+20 hours ago
+Git commit prior to merge
+author
+danicahartawan1
+committed
+20 hours ago
+feat: Replace all UI emojis with Lucide React icon components
+author
+danicahartawan1
+committed
+yesterday
+Git commit prior to merge
+author
+danicahartawan1
+committed
+yesterday
+Animate notebook covers to center and open before navigating
+author
+danicahartawan1
+committed
+yesterday
+Animate book covers to expand and fill the screen before navigating
+author
+danicahartawan1
+committed
+yesterday
+Add a 3D book opening animation to the notebooks page
+author
+danicahartawan1
+committed
+yesterday
+Redirect the main page to the canvas interface
+author
+danicahartawan1
+committed
+yesterday
+feat: Notebook interface with canvas & file tree (#10)
+author
+danicahartawan1
+committed
+yesterday
+Git commit prior to merge
+author
+danicahartawan1
+committed
+yesterday
+feat: Restyle /graph to match canvas UI theme (Task #9 revision)
+author
+danicahartawan1
+committed
+yesterday
+Git commit prior to merge
+author
+danicahartawan1
+committed
+yesterday
+Task #7: Folder browser → canvas two-screen flow
+author
+danicahartawan1
+committed
+yesterday
+Add screenshot to attached assets
+author
+danicahartawan1
+committed
+yesterday
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
